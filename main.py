@@ -54,7 +54,7 @@ class Act1Page(Handler):
 
 class Act2Page(Handler):
 	def get(self):
-		self.render('act2.html', title=' - 2. Capitol City')	
+		self.render('act2.html', title=' - 2. Capital City')	
 
 class Act3Page(Handler):
 	def get(self):
