@@ -80,6 +80,10 @@ class Act8Page(Handler):
 	def get(self):
 		self.render('act8.html', title=' - 8. Celebration')	
 
+class ContactPage(Handler):
+	def get(self):
+		self.render('contact.html', title=' - Contact')	
+
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
@@ -93,7 +97,8 @@ app = webapp2.WSGIApplication([
     ('/act5', Act5Page),
     ('/act6', Act6Page),
     ('/act7', Act7Page),
-    ('/act8', Act8Page)
+    ('/act8', Act8Page),
+    ('/contact', ContactPage)
 
 
 ], debug=True)
